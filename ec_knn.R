@@ -35,7 +35,7 @@ reference_correction<- function(D, k, radius){
   # sum(log(axes))
 }
 
-entropy_ec<- function(X, k, incr_ratio = .1, k_inner = k, k_x_th = 0, cl = NULL){
+entropy_ec<- function(X, k, incr_ratio = .01, k_inner = k, k_x_th = 0, cl = NULL){
   N<- nrow(X)
   D<- ncol(X)
   epsilon<- knn.dist(X, k)[,k]
